@@ -1,7 +1,18 @@
 
 import cuid from 'cuid';
-export const cuidFn = cuid;
+import C from '../constants'
 
-export default function manageRestaurants(state, action) {
-
+const initialState = []
+export default (state = initialState, action) => {
+    switch (action.type) {
+        case C.ADD_RESTAURANT:
+            const newRest = {
+                text: action.text,
+                id: cuid()
+            }
+            console.log(newRest)
+            return [...state, newRest]
+        default:
+            return state
+    }
 }

@@ -1,0 +1,8 @@
+const Constants = {
+    ADD_RESTAURANT: "ADD_RESTAURANT",
+    REMOVE_RESTAURANT: "REMOVE_RESTAURANT",
+    ADD_REVIEW: "ADD_REVIEW",
+    REMOVE_REVIEW: "REMOVE_REVIEW"
+}
+
+export default Constants
